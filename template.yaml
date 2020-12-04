@@ -1,7 +1,11 @@
 AWSTemplateFormatVersion : '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: A sample SAM template for deploying Lambda functions.
-
+Metadata:
+  AWS::ServerlessRepo::Application:
+    Name: my-date-time-app
+    Description: Application used for date and time info
+    Author: Dinesh Kumar
 Resources:
 # Details about the myDateTimeFunction Lambda function
   myDateTimeFunction:
